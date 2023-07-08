@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;  
+  background-color: #F0F0F0;
+  margin: auto;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2em;
+  color: #6B8DF2;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.15em;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif; 
+  text-transform: uppercase;
+}
+
+button {
+  background-color: #6B8DF2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius:100px;
+}
+
+button:hover {
+  background-color: #181818;
+}
+
+.buttonContainer {
+  padding: 5% 0;
+}
+
+
+#header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 2%;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navItem {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #181818;
+}
+
+.navItem:hover {
+  color: #6B8DF2;
+  border-bottom: 3px solid #6B8DF2;
+  
+}
+
+.topHeroSection {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 5% 2%;
+  align-items: center;
+}
+
+.topHeroRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.heroImage {
+  width:100%;
+}
+
+.mySkills {
+  padding: 5% 2%;
+}
+
+.flexContainer {
+  display:flex;
+  flex-direction: row;
+}
+
+.threeColumn {
+  width:33%;
+  margin-right:4%;
+}
+
+.skillsImage {
+  width:25%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.mySkills {
+  background-color: #d4daec;
+}
+
+.myWork {
+  padding: 5% 2%;
+}
+
+.workGrid {
+  display:grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "roving"
+  "charityFinder"
+  "nma";
+}
+
+.projectImage {
+  width:100%;
+}
+
+.projectDiv {
+  padding: 4% 0%;
+}
+
+.projectCopy {
+  padding-left: 2%;
+  align-self: center;
+}
+
+.footer {
+  background-color: #181818;
+  padding: 5% 2%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.flexItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.questions-container{
+  padding: 0 2% 7% 2%;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+
+.question {
+  border-bottom: 1px solid #181818;
+  margin-bottom: 2em;
+}
+
+.question button{
+  width: 100%;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 16px;
+  color: #181818;
+  font-weight: 700;
+  cursor: pointer;
+}
+.question p{
+  font-size: 16px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color:#181818;
+}
+
+/*add this class when click*/
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
+}
+
+.footerText {
+  color: #F0F0F0;
+}
+
+@media only screen and (max-width: 600px) { 
+  .mySkills { 
+  display: block; 
+  }
+
+  .topHeroSection {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr;
+    padding: 5% 2%;
+    align-items: center;
+  }
+
+  .flexContainer {
+    display:flex;
+    flex-direction: column;
+  }
+  .threeColumn {
+    width:100%;
+    padding-top: 7%;
+  }
+
+  .workGrid {
+  display:grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "roving"
+  "charityFinder"
+  "nma";
+}
+.projectImageMobile {
+  padding-top: 10%;
+}
+
+.footer {
+  background-color: #181818;
+  padding: 5% 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 7%;
+}
+
+.flexItem {
+  display: flex;
+  justify-content: start;
+  margin: 5% 0;
+}
+
+}
